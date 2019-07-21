@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradientbackground"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/blood"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_blood_donation"
+
+                />
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:id="@+id/card"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/blood"
+                app:cardCornerRadius="15dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/linear_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <EditText
+                                android:id="@+id/useredit"
+                                android:layout_width="match_parent"
+                                android:paddingLeft="20dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/rounded_corner"
+                                android:hint="email address"
+                                android:layout_centerHorizontal="true"
+                                android:textAlignment="center"
+                                android:drawableLeft="@drawable/ic_person"
+                                android:inputType="textEmailAddress"
+                                />
+                            <EditText
+                                android:layout_marginTop="20dp"
+                                android:id="@+id/passwordedit"
+                                android:layout_width="match_parent"
+                                android:paddingLeft="20dp"
+                                android:layout_height="40dp"
+                                android:drawableLeft="@drawable/ic_lock"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/rounded_corner"
+                                android:hint="password"
+                                android:textAlignment="center"
+                                android:layout_below="@+id/useredit"/>
+
+                            <TextView
+                                android:id="@+id/login_with_otp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Login with OTP"
+                                android:textAlignment="center"
+                                android:layout_marginTop="10dp"
+                                android:textColor="#000"
+                                android:layout_below="@+id/passwordedit"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linear_layout_otp"
+                        android:orientation="vertical"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:visibility="gone">
+                        <EditText
+                            android:id="@+id/phone_edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:paddingLeft="20dp"
+                            android:drawableLeft="@drawable/ic_phone"
+                            android:background="@drawable/rounded_corner"
+                            android:hint="phone number"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            />
+                        <EditText
+                            android:layout_marginTop="20dp"
+                            android:id="@+id/otp_edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/rounded_corner"
+                            android:hint="otp"
+                            android:textAlignment="center"
+                            android:layout_below="@+id/phone_edit"
+                            />
+                        <TextView
+                            android:id="@+id/login_with_credentials"
+                            android:layout_below="@id/otp_edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/loginWithCredentials"
+                            android:textAlignment="center"
+                            android:layout_marginTop="10dp"
+                            android:textColor="#000"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/image_facebook_google">
+                        <TextView
+                            android:id="@+id/forgotpassword"
+                            android:layout_below="@id/otp_edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Forgotpassword"
+                            android:textAlignment="center"
+                            android:layout_marginTop="10dp"
+                            android:textColor="#000"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="50dp">
+                            <ImageView
+                                android:layout_marginTop="20dp"
+                                android:id="@+id/facebook"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/ic_facebook_logo"
+                                android:layout_marginLeft="130dp"
+                                />
+                            <ImageView
+                                android:layout_marginTop="20dp"
+                                android:id="@+id/google"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/ic_search"
+                                android:layout_marginLeft="200dp"
+                                />
+                        </RelativeLayout>
+                        <TextView
+                            android:id="@+id/sign_in_login_page"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Sign in?"
+                            android:textColor="#000"
+                            android:layout_marginBottom="40dp"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/logsubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOGIN"
+                android:layout_below="@id/card"
+                android:layout_centerHorizontal="true"
+                android:background="#FDFAFA"
+                android:layout_marginTop="10dp"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/logsubmit"
+                android:src="@drawable/ic_searching_magnifying_glass"
+                android:layout_marginLeft="120dp"/>
+            <TextView
+                android:id="@+id/search_for_donor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logsubmit"
+                android:layout_marginTop="5dp"
+                android:text="Search for donor"
+                android:textAlignment="center"
+                android:textColor="#000"/>
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

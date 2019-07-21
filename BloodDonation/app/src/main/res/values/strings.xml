@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Blood Donation App</string>
+    <string-array name="spinner_list">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Trans</item>
+    </string-array>
+    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="survey_q1">Have you ever donated blood before</string>
+    <string name="Yes">Yes</string>
+    <string name="no">no</string>
+    <string name="survey_question_2">What is your blood type</string>
+    <string-array name="blood_group_list">
+        <item>A positive</item>
+        <item>B positive</item>
+        <item>O positive</item>
+        <item>AB positive</item>
+        <item>A negative</item>
+        <item>B negative</item>
+        <item>AB negative</item>
+        <item>O negative</item>
+    </string-array>
+    <string name="Aplus">A positive</string>
+    <string name="Bplus">B positive</string>
+    <string name="Oplus">O positive</string>
+    <string name="ABplus"> AB positive</string>
+    <string name="Anegative">A negative</string>
+    <string name="Bnegative">B negative</string>
+    <string name="Onegative">O negative</string>
+    <string name="ABnegative">AB negative</string>
+    <string name="survey_q3">The reason why you want to donate blood</string>
+    <string name="Forgotpassword">Forgot password ?</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="loginWithCredentials">Log In With Credentials</string>
+    <string name="profile">Profile</string>
+    <string name="home">Home</string>
+    <string name="donation_history">Donation History</string>
+    <string name="blogs">Blogs</string>
+    <string name="survey_updates">Survey Updates</string>
+    <string name="give_blood_save_life">GIVE BLOOD SAVE LIFE</string>
+    <string name="survey_q2">Do you have a history of hepititis</string>
+
+    <string name="survey_q4_a1">fatigue experience after blood donation</string>
+    <string name="survey_q4_a2">Blood donation where specific components of blood are seperated and transfused</string>
+    <string name="survey_q4">What is apheresis?</string>
+    <string name="survey_q5">Do you weigh less than 45 kg?</string>
+    <string name="how_much_do_you_weigh">How much do you weigh?</string>
+    <string name="title_activity_search_donor_blood">Map</string>
+</resources>

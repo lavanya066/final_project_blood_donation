@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="#D6D2D2"
+                android:padding="20dp">
+<de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:src="@drawable/ic_rapper"
+    />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_below="@id/header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/redgradbackground">
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Available for Donation"
+                        android:textStyle="bold"
+                        />
+                    <Switch
+                        android:id="@+id/switch_donor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <android.support.v7.widget.CardView
+                        android:layout_height="50dp"
+                        android:layout_width="70dp"
+                        android:layout_marginLeft="20dp"
+                        android:elevation="4dp"
+                        android:layout_marginTop="20dp">
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+                            <EditText
+                                android:layout_width="70dp"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="20dp"
+                                android:id="@+id/age_profile"
+                                android:hint="age"
+                                android:textAlignment="center"
+                                android:inputType="number"
+                                />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <RadioGroup
+                        android:id="@+id/radiogroup_profile"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="120dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:id="@+id/male_profile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="male"
+                            />
+                        <RadioButton
+                            android:layout_marginTop="-30dp"
+                            android:layout_marginLeft="100dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/female_profile"
+                            android:text="female"/>
+                    </RadioGroup>
+
+
+
+
+                </RelativeLayout>
+                <android.support.v7.widget.CardView
+                    android:layout_height="50dp"
+                    android:layout_width="250dp"
+                    android:elevation="4dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp">
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="60dp"
+                            android:id="@+id/emailupdate"
+                            android:layout_marginLeft="20dp"
+                            android:hint="email"
+                            android:textAlignment="center"
+                            android:inputType="textEmailAddress"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_height="50dp"
+                    android:layout_width="250dp"
+                    android:elevation="4dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp">
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="60dp"
+                            android:id="@+id/userupdate_profile"
+                            android:layout_marginLeft="20dp"
+                            android:hint="username"
+                            android:textAlignment="center"
+
+                            />
+                    </android.support.design.widget.TextInputLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_height="50dp"
+                    android:layout_width="220dp"
+                    android:layout_marginLeft="20dp"
+                    android:elevation="4dp"
+                    android:layout_marginTop="20dp">
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleTint="#000">
+                        <EditText
+                            android:layout_width="220dp"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="10dp"
+                            android:id="@+id/oldpassword_profile"
+                            android:hint="old password"
+                            android:textAlignment="center"
+                            android:inputType="textPassword"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_height="50dp"
+                    android:layout_width="220dp"
+                    android:layout_marginLeft="20dp"
+                    android:elevation="4dp"
+                    android:layout_marginTop="20dp">
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleTint="#000"
+
+                        >
+                        <EditText
+                            android:layout_width="220dp"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="10dp"
+                            android:id="@+id/newpassword_profile"
+                            android:hint="new password"
+                            android:textAlignment="center"
+                            android:inputType="textPassword"
+
+                            />
+                    </android.support.design.widget.TextInputLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_height="50dp"
+                    android:layout_width="220dp"
+                    android:layout_marginLeft="20dp"
+                    android:elevation="4dp"
+                    android:layout_marginTop="20dp">
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <EditText
+                            android:layout_width="220dp"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="10dp"
+                            android:id="@+id/mobile_number_profile"
+                            android:hint="Mobile Number"
+
+                            android:textAlignment="center"
+
+                            />
+                    </android.support.design.widget.TextInputLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
